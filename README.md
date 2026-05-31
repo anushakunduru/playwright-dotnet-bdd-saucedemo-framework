@@ -1,3 +1,4 @@
+[![Playwright .NET BDD Tests](https://github.com/anushakunduru/playwright-dotnet-bdd-saucedemo-framework/actions/workflows/dotnet-tests.yml/badge.svg)](https://github.com/anushakunduru/playwright-dotnet-bdd-saucedemo-framework/actions/workflows/dotnet-tests.yml)
 # Playwright .NET BDD SauceDemo Framework
 
 A modern UI automation framework built using Playwright, .NET, NUnit, and Reqnroll BDD following the Page Object Model design pattern.
