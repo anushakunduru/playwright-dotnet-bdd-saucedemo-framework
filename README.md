@@ -1,75 +1,141 @@
-# Playwright .NET Automation Framework
+# Playwright .NET BDD SauceDemo Framework
 
-## Overview
+A modern UI automation framework built using Playwright, .NET, NUnit, and Reqnroll BDD following the Page Object Model design pattern.
 
-A scalable UI test automation framework built using Playwright, C#, .NET 10, NUnit, and the Page Object Model (POM) design pattern. The framework automates end-to-end e-commerce workflows and demonstrates modern automation engineering practices including reusable page objects, configuration management, test data separation, and browser lifecycle management.
+## Features
 
-## Technology Stack
+* Playwright browser automation
+* Reqnroll BDD framework
+* NUnit test execution
+* Page Object Model (POM)
+* JSON-driven test data
+* Screenshot capture on failure
+* Extent HTML reporting
+* GitHub Actions CI/CD integration
+* Multi-layer framework structure
 
-- C#
-- .NET 10
-- Playwright
-- NUnit
-- Page Object Model (POM)
-- Git
-- GitHub
-- JSON Test Data
+## Tech Stack
 
-## Framework Features
+* C#
+* .NET 10
+* Playwright
+* NUnit
+* Reqnroll
+* Extent Reports
+* GitHub Actions
+* Git
 
-- Reusable Page Object Model architecture
-- Centralized browser management
-- Externalized test data using JSON
-- Configurable framework settings
-- End-to-end workflow automation
-- Cross-browser testing support (future enhancement)
-- CI/CD integration ready
+## Framework Architecture
 
-## Automated Test Scenarios
+Feature Files
 
-### Authentication
+↓
 
-- Valid User Login
-- User Logout
+Step Definitions
 
-### Shopping Cart
+↓
 
-- Add Product To Cart
-- Verify Cart Contents
+Page Objects
 
-### Checkout
+↓
 
-- Complete Purchase Flow
-- Order Confirmation Validation
+Playwright Driver
+
+↓
+
+Browser
+
+↓
+
+Application Under Test
 
 ## Project Structure
 
-```text
-Config/
-Drivers/
-Pages/
-TestData/
-Utils/
-Reports/
-Screenshots/
-```
+PlaywrightDotNetBDDFramework
 
-## Test Execution
+├── Config
 
-```bash
+├── Drivers
+
+├── Features
+
+│ ├── Login.feature
+
+│ ├── Cart.feature
+
+│ └── Checkout.feature
+
+├── Hooks
+
+├── Pages
+
+│ ├── LoginPage
+
+│ ├── ProductsPage
+
+│ ├── CartPage
+
+│ └── CheckoutPage
+
+├── StepDefinitions
+
+├── TestData
+
+├── Utils
+
+├── Reports
+
+└── Screenshots
+
+## Automated Scenarios
+
+### Login
+
+* Valid user login
+
+### Cart
+
+* Add product to cart
+* Verify cart badge
+* Verify cart contents
+
+### Checkout
+
+* Complete purchase flow
+* Verify order confirmation
+
+## Reporting
+
+The framework generates Extent HTML reports after execution.
+
+Reports include:
+
+* Test execution status
+* Pass / Fail results
+* Execution duration
+* Failure screenshots
+
+## Continuous Integration
+
+GitHub Actions automatically performs:
+
+* Restore packages
+* Build solution
+* Install Playwright browsers
+* Execute automated tests
+
+on every push to the main branch.
+
+## Running Tests
+
+Run all tests:
+
 dotnet test
-```
 
-## Application Under Test
+Run Playwright browser installation:
 
-https://www.saucedemo.com
+powershell playwright.ps1 install
 
-## Future Enhancements
+## Author
 
-- BDD Implementation using Reqnroll
-- GitHub Actions CI/CD Pipeline
-- HTML Reporting
-- Screenshot Capture on Failure
-- Parallel Execution
-- Multi-Browser Execution
-- Environment Configuration Support
+Anusha Kunduru
