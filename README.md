@@ -137,6 +137,10 @@ Run Playwright browser installation:
 
 powershell playwright.ps1 install
 
+## Sample HTML Report
+
+![Extent Report](docs/report.png)
+
 ## Author
 
 Anusha Kunduru
